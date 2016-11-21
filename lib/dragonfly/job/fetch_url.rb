@@ -40,6 +40,7 @@ module Dragonfly
       end
 
       def apply
+        puts "DRAGONFLY: fetch url: #{url.inspect}"
         if data_uri?
           update_from_data_uri
         else
